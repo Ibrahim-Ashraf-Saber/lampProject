@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light {
+  @apply w-screen h-screen flex justify-center items-center relative transition-all duration-500;
+}
+
+.lamp {
+  @apply w-[100px] h-[100px] rounded-full relative z-[100];
+}
+
+.lamp-head {
+  @apply w-[50px] h-[100px] absolute top-[-70px] left-[50%] translate-x-[-50%] border-t-[50px] border-black rounded-t-lg;
+}
+
+.wire {
+  @apply h-[50%] w-[5px] bg-black absolute top-[0] z-[0];
+}
+
+.switch {
+  @apply w-[100px] h-[100px] bg-[linear-gradient(to_bottom,#eee,#ccc,#eee)] border-[5px] border-black rounded-lg absolute bottom-[30px] right-[30px] flex justify-center items-center;
+}
+
+.switch-1 {
+  @apply w-[30%] h-[60%] bg-[linear-gradient(to_bottom,#777,#fff,#777)] rounded-md border-[3px] border-black cursor-pointer relative;
+}
+
+.switch-2 {
+  @apply w-full h-[90%] bg-[linear-gradient(to_bottom,#fff,#fff)] rounded-md absolute shadow-slate-700 shadow-lg transition-all duration-300;
+}
